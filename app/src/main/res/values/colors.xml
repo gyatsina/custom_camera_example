@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Colors in general -->
+    <color name="turquoise">#19bcb9</color>
+    <color name="light_turquoise">#62bfe8</color>
+    <color name="lightest_turquoise">#72d4ff</color>
+    <color name="dark_blue">#8cdddc</color>
+    <!-- <color name="dark_blue">#037674</color> -->
+    <color name="darkest_blue">#037674</color>
+    <color name="white">#ffffff</color>
+    <color name="white_2">#fffffc</color>
+    <color name="black">#000000</color>
+    <color name="gray">#cecece</color>
+    <color name="light_gray">#f1f1f1</color>
+    <color name="red">#f1390e</color>
+    <color name="black_50_transparent">#50000000</color>
+    <color name="record_red">#ea0051</color>
+    <color name="dark_red">#CB0145</color>
+
+    <!-- these are the colors of the top tabs -->
+    <color name="top_tab_seperator">#ffffff</color>
+
+    <!-- these are the colors of the buttom tabs -->
+    <color name="dark_gray">#888888</color>
+    <!-- this is just transparent, so no color -->
+    <color name="transparent">#00f1f4ff</color>
+
+    <!-- pressed color of all buttons -->
+    <color name="button_pressed">#059592</color>
+
+    <!-- Bottom bar -->
+    <color name="bottom_bar_dark">#15212e</color>
+    <color name="bottom_bar_light">#283243</color>
+
+    <!-- Cards -->
+    <color name="cards_date_color">#f0f0f0</color>
+    <color name="cards_date_text_color">#777777</color>
+    <color name="cards_text_color">#343e55</color>
+
+    <!-- Settings -->
+    <color name="settings_segment_color">#777777</color>
+    <color name="settings_segment_seperator">#e1e1e1</color>
+    <color name="settings_text_color">#222222</color>
+    <color name="settings_text_color_secondary">#888888</color>
+    <color name="settings_text_color_disabled">#999999</color>
+
+    <!-- Upload -->
+    <color name="upload_video_title_hint_color">#aaaaaa</color>
+
+    <!-- Custom ProgessBar -->
+    <!-- <color name="greenStart">#ff33dd44</color> -->
+    <!-- <color name="greenMid">#ff0A8815</color> -->
+    <!-- <color name="greenEnd">#ff1da130</color> -->
+
+</resources>
