@@ -1,12 +1,20 @@
 package com.gyatsina.custom_camera_example.app;
 
+import android.content.Intent;
+import android.net.Uri;
+import android.provider.MediaStore;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+
 
 public class MainActivity extends ActionBarActivity {
+
+    public static int TAKE_IMAGE_CUSTOM = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,5 +40,22 @@ public class MainActivity extends ActionBarActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    //    public void takePhotoCustom(final View view) {
+//        Intent customCamera = new Intent(this, ActivityCustomCamera.class);
+//        startActivityForResult(customCamera, TAKE_IMAGE_CUSTOM);
+//	}
+
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+       if (requestCode == TAKE_IMAGE_CUSTOM){
+                String photoPath = data.getExtras().getString("photoFilePath");
+                File photoFile = new File(photoPath);
+                Uri photoUri = Uri.fromFile(photoFile);
+//                Picasso.with(this)
+//                        .load(photoUri).fit().centerInside()
+//                        .into(takenImage, imageLoadedCallback);
+//            }
+        }
     }
 }
