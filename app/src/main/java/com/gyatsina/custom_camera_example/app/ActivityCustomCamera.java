@@ -133,7 +133,7 @@ public class ActivityCustomCamera extends Activity implements
         sDateFormat = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss_ms");
 
         photoDirectoryPath = Environment.getExternalStorageDirectory()
-                .getAbsolutePath() + "/fotovio/images/";
+                .getAbsolutePath() + "/myCameraExample/images/";
         createDirIfNotExist(photoDirectoryPath);
 
         surfaceView = (SurfaceView) findViewById(R.id.surface_camera);
@@ -210,6 +210,8 @@ public class ActivityCustomCamera extends Activity implements
             FileOutputStream fos = new FileOutputStream(String.format(photoFilePath));
             fos.write(data);
             fos.close();
+            Intent mainIntent = new Intent(ActivityCustomCamera.this, MainActivity.class);
+            startActivity(mainIntent);
         } catch (FileNotFoundException e)
         {
             e.printStackTrace();
